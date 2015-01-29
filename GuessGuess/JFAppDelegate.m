@@ -11,16 +11,13 @@
 #import "JFUtilityForGuess.h"
 #import "UMSocial.h"
 #import "MyStoreObserver.h"
-#import "UMSocialYixinHandler.h"
 //#import "UMSocialFacebookHandler.h"
 //#import "UMSocialLaiwangHandler.h"
 #import "UMSocialWechatHandler.h"
 //#import "UMSocialTwitterHandler.h"
-#import "UMSocialQQHandler.h"
 #import "UMSocialSinaHandler.h"
-//#import "UMSocialTencentWeiboHandler.h"
-//#import "UMSocialRenrenHandler.h"
-#import "UMSocialInstagramHandler.h"
+
+
 
 @implementation JFAppDelegate
 
@@ -107,10 +104,8 @@
    // [UMSocialTencentWeiboHandler openSSOWithRedirectUrl:@"http://sns.whalecloud.com/tencent2/callback"];
     
     
-    //    //设置分享到QQ空间的应用Id，和分享url 链接
-    [UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
-    //    //设置支持没有客户端情况下使用SSO授权
-      [UMSocialYixinHandler setYixinAppKey:@"yx35664bdff4db42c2b7be1e29390c1a06" url:@"http://www.umeng.com/social"];
+
+ 
     
 
     
@@ -119,8 +114,7 @@
     //设置facebook应用ID，和分享纯文字用到的url地址
     //    [UMSocialFacebookHandler setFacebookAppID:@"91136964205" shareFacebookWithURL:@"http://www.umeng.com/social"];
     
-    //下面打开Instagram的开关
-    [UMSocialInstagramHandler openInstagramWithScale:NO paddingColor:[UIColor blackColor]];
+
     
     //[UMSocialTwitterHandler openTwitter];
     
